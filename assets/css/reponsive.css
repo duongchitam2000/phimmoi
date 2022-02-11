@@ -137,6 +137,18 @@
         transform: translateX(-50%);
         z-index: 1;
     }
+    .auth-form-group input{
+    font-size: 100%;
+    width: 80%;
+    height: 35px;
+    margin: 5px 0;
+    padding: 0 5px;
+    }
+    .auth-form-controls .btn{
+        width: 80%;
+        height: 35px;
+        background-color: var(--primary);
+    }
     .footer-left{
         padding: 0 10px;
     }
