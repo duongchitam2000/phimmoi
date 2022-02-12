@@ -255,6 +255,7 @@ ul li{
 .close-menu.close-form{
     font-size:200%;
     padding: 0 5px;
+    height: 50px;
 }
 /* =========menu-top========================== */
 .wapper-menu-top{
@@ -312,7 +313,7 @@ ul li{
     z-index: 1;
 }
 .dropdown-item{
-    line-height: 25px;
+    line-height: 35px;
     width: 102%;
     padding: 0 5px;
 }
@@ -325,7 +326,7 @@ ul li{
 }
 .dropdown-item a{
     color: #777;
-    line-height: 25px;
+    line-height: 35px;
     display: block;
 } 
 /* ================================================main=========================================== */
@@ -333,6 +334,7 @@ ul li{
     background-color:#383838;
     padding: 30px 0;
 }
+
 .product-sidebar, .product-item{
     margin: 40px 0;
 }
@@ -389,6 +391,61 @@ ul li{
 .sidebar-item-rote i{
     font-size: 90%;
     color: #df961b !important;
+}
+.sidebar-second{
+    background-color:#1c1c1c ;
+}
+.tab-list{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.tab-list-item{
+    margin: 15px 0;
+    padding: 0 5px;
+    text-align: center;
+    display: block;
+    width: 33%;
+    color: #fff;
+    line-height: 40px;
+    cursor: pointer;
+}
+
+.tab-list-item.active{
+    background-color: #777;
+}
+.tabs-content{
+    display: none;
+    transition: 0.5s;
+}
+.tabs-content.active{
+    display: block;
+}
+.tab-list-item-content{
+    padding: 0 10px;
+    line-height: 60px;
+    display: flex;
+    align-items: center;
+
+}
+.tab-list-item-content a{
+    color: rgb(224, 223, 223);
+    font: 130%;
+}
+.tab-list-item-content:nth-of-type(2n + 1){
+    background-color: #181818;
+}
+
+.tab-list-content-number{
+    margin-right: 10px;
+    text-align: center;
+    color: #fff;
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-color: var(--primary);
+    border-radius: 50%;
+    line-height: 20px;
 }
 /* =======================================footer==================================== */
 .footer{
