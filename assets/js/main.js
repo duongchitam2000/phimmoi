@@ -17,6 +17,7 @@ overLay.onclick = function(){
 	menuMobile.style.transform = "translateX(-100%)";
 	overLay.style.display = "none";
 	
+	// formloginwapper.style.display = 'none';
  }
  menuclose.onclick = function(){
 	menuMobile.style.transform = "translateX(-100%)";
@@ -56,3 +57,21 @@ overLay.onclick = function(){
  contact.onclick = function(){
 	alert('Chức năng đang phát triển! ');
  }
+// tabs sidebar
+
+const tabsall = document.querySelectorAll('.tab-list-item')
+const tabsContentall = document.querySelectorAll('.tabs-content')
+tabsall.forEach((tab, index) =>{
+	tab.addEventListener("click", () =>{
+		tabsContentall.forEach((tabContent)=>{
+			tabContent.classList.remove('active')
+		}) 
+		tabsall.forEach((tab)=>{
+			tab.classList.remove('active')
+		}) 
+
+		tabsall[index].classList.add('active')
+		tabsContentall[index].classList.add('active')	
+		
+	})
+})
